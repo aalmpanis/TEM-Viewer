@@ -1,0 +1,23 @@
+[general]
+name=TEM-Viewer
+qgisMinimumVersion=3.30
+qgisMaximumVersion=4.99
+description=View TEM / AEM 1D inversion models (.xyz) in QGIS: sounding maps, resistivity (and IP) profiles, mean-resistivity maps and geological sections.
+version=1.0.0
+author=TEM-Viewer contributors
+email=CHANGE_ME@example.com
+about=TEM-Viewer loads 1D inversion models of TEM / AEM soundings from .xyz files (plain column files or files with a '/'-commented header; the coordinate system is read from the header when it is there) as point layers, and works on any sounding layers you tick.
+ TEM data: import .xyz files, list the sounding layers and colour soundings on the map by any attribute, with a colour bar on the map.
+ Profile: resistivity sections along a line drawn on the map, through soundings selected on the map, along a line from a line layer or along a saved profile; bars or interpolated, DOI mask, data misfit, direction on the map, cursor linked to the map, adjustable colour scales, optional topography from a DEM and boreholes from a borehole layer. For IP inversions the phase, tau, C, chargeability (or any other per-layer model parameter in the file) can be plotted too, stacked in panels with their own colour scales. Profiles can be saved (GeoPackage) and loaded again for editing.
+ Mean maps: mean resistivity (or IP parameter) in depth or elevation slices, interpolated with inverse distance or ordinary kriging, added to the map as GeoTIFF layers.
+ Geological Model: pick the surfaces between formations on a section and plot the geological section; surfaces can be exported as 3D lines.
+ Optional Python packages: scipy (faster neighbour search, variogram fitting), openpyxl (Excel files).
+tracker=https://github.com/aalmpanis/TEM-Viewer/issues
+repository=https://github.com/aalmpanis/TEM-Viewer
+homepage=https://github.com/aalmpanis/TEM-Viewer
+category=Vector
+icon=icon.png
+tags=tem,aem,electromagnetic,resistivity,induced polarization,ip,geophysics,profile,section,sounding,xyz,hydrogeology
+experimental=False
+deprecated=False
+changelog=1.0.0 First public version.
